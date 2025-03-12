@@ -11,3 +11,11 @@ while True:
         print("Invalid input")
         break
 
+#Function to sort the numbers from lowest to highest
+def lowest_to_highest(list_of_numbers):
+    list_of_numbers.sort()
+    return list_of_numbers 
+
+#Call the function and prints the result
+sorted_list = lowest_to_highest(list_of_numbers)
+print("Sorted list: ", sorted_list)
