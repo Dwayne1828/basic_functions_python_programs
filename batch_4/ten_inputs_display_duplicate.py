@@ -13,8 +13,10 @@ def display_duplicate(list_of_inputs):
     
     for numbers in list_of_inputs:
         if list_of_inputs.count(numbers) > 1:
-            duplicates.append(numbers) 
-        return duplicates
+            if numbers not in duplicates:
+                duplicates.append(numbers) 
+        
+    return duplicates
 
 #Call the function and store the result in a variable
 duplicates = display_duplicate(list_of_inputs)
