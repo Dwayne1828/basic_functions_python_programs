@@ -9,11 +9,13 @@ while True:
     except ValueError:
         break
 
+#Function to check if the number is unique or duplicate
 def unique_and_duplicate_numbers(list_of_numbers):
     if list_of_numbers.count(number) == 1:
         return "Unique"
     else:
         return "Duplicate"
-    
+
+#Call the function for the list and prints the result
 unique_or_duplicate = unique_and_duplicate_numbers(list_of_numbers) 
 print(unique_or_duplicate) 
