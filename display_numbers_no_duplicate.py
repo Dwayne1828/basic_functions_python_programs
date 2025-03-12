@@ -6,9 +6,14 @@ for i in range(10):
     number = int(input("Enter a number: "))
     input_list.append(number) #Adds the number to the list
 
+#Creates a new empty list to store the numbers that are not duplicates
+no_duplicate_list = []
+
 #Counts how many times each number appears in the list 
 for num in input_list:
-    input_list.count(num) == 1 
-    print(num) #Prints the number if it appears only once
+    if input_list.count(num) == 1: 
+        no_duplicate_list.append(num)
+
+print(no_duplicate_list) 
 
 
