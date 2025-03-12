@@ -5,5 +5,7 @@ input_list = []
 
 for i in range(10):
     number = int(input("Enter a number: "))
-    input_list.append(number) #Adds the number to the list
+    if number not in input_list:
+        input_list.append(number) #Adds the number to the list
     
+print(input_list) #Prints the list of numbers that are not duplicates
